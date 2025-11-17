@@ -1,0 +1,37 @@
+# --- Core Python ---
+pandas==2.2.2
+numpy==1.26.4
+
+# --- NLP & ML ---
+textblob==0.17.1
+vaderSentiment==3.3.2
+scikit-learn==1.5.0
+nltk==3.9.1
+
+# --- Scraping & APIs ---
+snscrape==0.7.0.20230622
+requests==2.32.3
+tweepy==4.14.0
+
+# --- Geolocalización & Mapas ---
+geopy==2.4.1
+folium==0.17.0
+
+# --- Backend & Dashboard ---
+Flask==3.0.3
+Jinja2==3.1.4
+
+# --- Frontend helpers ---
+gunicorn==22.0.0  # para despliegue en producción
+
+# --- Base de datos & MLOps ---
+psycopg2-binary==2.9.9   # conexión con Postgres
+sqlalchemy==2.0.31       # ORM para consistencia
+redis==5.0.7             # cache/cola de tareas
+
+# --- Explicabilidad & análisis ---
+shap==0.44.0
+lime==0.2.0.1
+
+# --- Infraestructura ---
+docker==7.1.0   # interacción con Docker desde Python (opcional)
