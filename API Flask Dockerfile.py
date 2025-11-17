@@ -20,4 +20,13 @@ EXPOSE 8080
 # -b 0.0.0.0:8080 → escucha en todas las interfaces
 # -w 4 → 4 workers para concurrencia
 # app:app → nombre del archivo (app.py) y objeto Flask
-CMD ["gunicorn", "-b", "0.0.0.0:8080", "-w", "4", "app:app"]
+CMD ["gunicorn", "-b", "0.0.0.0:8080", "-w", "4", "app:app"] 
+
+from flask import Flask
+
+app = Flask(__name__)
+
+@app.route("/")
+def home():
+    return {"status": "Pulso Social Urbano API running"}
+
