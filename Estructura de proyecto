@@ -1,0 +1,10 @@
+pulso-social-urbano/
+│── api/                # Flask backend con endpoints REST
+│   └── Dockerfile
+│── ingest/             # Workers de scraping y procesamiento inicial
+│   └── Dockerfile
+│── frontend/           # HTML/JS con Leaflet/Mapbox
+│   └── Dockerfile
+│── db/                 # Base de datos Postgres
+│── redis/              # Cola/cache para tareas
+│── docker-compose.yml
